@@ -4,41 +4,71 @@
     <meta charset="UTF-8">
     <title>Đăng Ký Sinh Viên</title>
 </head>
+<h1 style="color:red"> Đăng ký Học Viên </h1>
 <body>
-Họ và tên
-<td><<input type="text" name="fullname" value=""/><br>
+<form>
+    <table >
+        <tr>
+            <td> Họ và Tên</td>
+            <td><input type="text"name="fullname" value=""></td>
+        </tr>
+        <tr>
+            <td> Ngày Sinh</td>
+            <td> <input type="date" name="date of birth" value=""></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" name="sex" value=""> Nam
+                <input type="radio" name="sex" value=""> Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Địa Chỉ</td>
+            <td><textarea name="Địa Chỉ" rows="5" cols="20"></textarea> </td>
+        </tr>
+        <tr>
+            <td> Lớp</td>
+            <td>
+                <select>
+                    <option name="Lớp" value="1">Lớp 1</option>
+                    <option name="Lớp" value="1">Lớp 2</option>
+                    <option name="Lớp" value="1">Lớp 3</option>
+                    <option name="Lớp" value="1">Lớp 4</option>
+                    <option name="Lớp" value="1">Lớp 5</option>
+                    <option name="Lớp" value="1">Lớp 6</option>
 
-Ngày Sinh
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> Email</td>
+            <td><input type="text" name="email" value=""></td>
 
-<input type="date" name="DOB" value=""><br>
+        </tr>
+        <tr>
+            <td>Điện Thoại</td>
+            <td><input type="text"name="phone"value=""></td>
+        </tr>
+        <tr>
+            <td style="text-align: right">
+                <input type="submit"name="" value="Đăng ký">
+            </td>
+            <td style="text-align: left">
+                <input type="reset" name="" value=" Nhập Lại">
+            </td>
+        </tr>
 
-Giới Tính
 
-<td><input type="radio" name="sex" value="">Nam
-    <input type="radio" name="sex" value="">Nữ<br>
 
-Địa Chỉ
 
-<input type="textarea"  name=" full" value=""><br>
+    </table>
 
-Lớp
-    <select name="Lớp">
-        <option value="L1">Lớp1</option>
-        <option value="L2">Lớp2</option>
-        <option value="L3">Lớp3</option>
-        <option value="L4">Lớp4</option>
-    </select><br>
 
-Email
 
-<input type="text" name="fullname" value=""/><br>
 
-Phone
-<input type="text" name="Phone1" size="5"/>
-<input type="text" name="Phone1" size="5"/><br>
-    <input type="submit" value="Đăng ký">
-    <input type="submit" value="Nhập lại">
 
+</form>
 
 </body>
 </html>

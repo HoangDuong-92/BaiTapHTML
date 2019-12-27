@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> My Second HTMl</title>
+    <script>
+        function tinhTong(){
+        let x,y;
+        x = prompt("Nhập số thứ nhất:");
+        x = parseFloat(x);
+        y = prompt("Nhập số thứ hai");
+        y =  parseFloat(y)
+            z = x+y;
+        if (confirm("Bạn muốn tính tổng không??") ==true)
+        alert("Tổng là :" +z);
+        }
+    </script>
 </head>
 <body>
-$END$
+
+<input type="button" value="Tính Tổng" onclick="tinhTong()">
 </body>
 </html>
