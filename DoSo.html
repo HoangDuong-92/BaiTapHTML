@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function docSo1(number) {
+            let t1 ="";
+            switch (number) {
+
+                case 0: t1 ="không";
+                    break;
+                case 1: t1 ="Một";
+                    break;
+                case 2: t1 ="Hai";
+                    break;
+                case 3: t1 ="Ba";
+                    break;
+                case 4: t1 ="Bốn";
+                    break;
+                case 5: t1 ="Năm";
+                    break;
+                case 6: t1 ="Sáu";
+                    break;
+                case 7: t1 ="Bảy";
+                    break;
+                case 8: t1 ="Tám";
+                    break;
+                case 9: t1 ="Chín";
+                    break;
+                default: t1 = "Không biết";
+            }
+            return t1;
+        }
+        function docSo3(number) {
+            let t2 = "0";
+            let  hangTram,hangChuc,hangDonVi;
+
+            hangDonVi = number % 10;
+            hangChuc = (number/10) %10;
+            hangTram = number /100;
+
+            hangChuc = Number.parseInt(hangChuc);
+            hangTram = Number.parseInt(hangTram);
+
+            t2 = docSo1(hangTram) + "tram";
+            t2 += docSo1(hangChuc) +"muoi";
+            t2 += docSo1(hangDonVi);
+
+            return t2;
+        }
+        function docSo(){
+            let number=parseInt(prompt("Nhập số:"));
+            alert(docSo3(number));
+        }
+    </script>
+</head>
+<body>
+
+<button onclick="docSo()">Đọc Số</button>
+</body>
+</html>
